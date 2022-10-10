@@ -16,8 +16,6 @@ const SentryWebpackPluginOptions = {
   silent: true,
 };
 
-module.exports = withSentryConfig(
-  withPlugins(nextConfig),
-  SentryOptions,
-  SentryWebpackPluginOptions
-);
+module.exports = nextConfig;
+
+module.exports = withSentryConfig(SentryOptions, SentryWebpackPluginOptions);

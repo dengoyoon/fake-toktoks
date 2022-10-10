@@ -17,7 +17,7 @@ const Home: NextPage = () => {
           Welcome to Toks
         </h1>
         <button type="button" onClick={() => {
-          throw new Error("프론트엔드 에러!!");
+          throw new Error("프론트엔드 에러!!55");
         }}>
             위험..!
         </button>
