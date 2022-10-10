@@ -14,8 +14,13 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to TokToks
+          Welcome to Toks
         </h1>
+        <button type="button" onClick={() => {
+          throw new Error("프론트엔드 에러!!");
+        }}>
+            위험..!
+        </button>
       </main>
     </div>
   )
