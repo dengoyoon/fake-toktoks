@@ -17,7 +17,9 @@ const Home: NextPage = () => {
           Welcome to Toks
         </h1>
         <button type="button" onClick={() => {
-          throw new Error("프론트엔드 에러!!55");
+          const today = new Date();
+          const hourMinuteSecond = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`
+          throw new Error(`프론트엔드 에러!! (${hourMinuteSecond})`);
         }}>
             위험..!
         </button>
